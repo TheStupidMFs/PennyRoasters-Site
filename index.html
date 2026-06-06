@@ -8,92 +8,126 @@
 </head>
 
 <body>
-  <canvas id="beans"></canvas>
+  <canvas id="beanCanvas"></canvas>
+  <div class="cursor-glow"></div>
 
   <header class="nav">
-    <img class="logo" src="penny-logo.png" alt="Penny Coffee Roasters logo" />
+    <a href="#home" class="logo-link">
+      <img class="logo" src="penny-logo.png" alt="Penny Coffee Roasters logo" />
+    </a>
 
     <nav>
       <a href="#drinks">Drinks</a>
       <a href="#locations">Locations</a>
-      <a href="#beans-section">Beans</a>
+      <a href="#beans">Beans</a>
     </nav>
 
-    <a class="order-btn" href="#order">Order</a>
+    <a class="nav-order magnetic" href="#order">Order</a>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-left">
+    <section id="home" class="hero">
+      <div class="hero-watermark">PENNY</div>
+
+      <div class="hero-copy">
         <p class="eyebrow">Fresh roasted • neighborhood coffee • daily ritual</p>
 
-        <h1>Uniting Community One Coffee At A Time</h1>
+        <h1>
+          Uniting Community<br />
+          One Coffee<br />
+          At A Time
+        </h1>
 
-        <p class="hero-copy">
-          Handcrafted drinks, fresh beans, and a warm local space built for conversations,
-          slow mornings, and your next favorite cup.
+        <p>
+          Handcrafted drinks, fresh beans, and a warm local space built for
+          conversations, slow mornings, and your next favorite cup.
         </p>
 
-        <div id="order" class="hero-buttons">
-          <a target="_blank" href="https://order.toasttab.com/online/penny-coffee-roasters-glendora-new-905-east-arrow-highway">
+        <div id="order" class="button-row">
+          <a class="btn primary magnetic" target="_blank" href="https://order.toasttab.com/online/penny-coffee-roasters-glendora-new-905-east-arrow-highway">
             Order Glendora
           </a>
 
-          <a target="_blank" href="https://order.toasttab.com/online/penny-coffee-roasters-azusa-ave-new-650-north-azusa-avenue">
+          <a class="btn dark magnetic" target="_blank" href="https://order.toasttab.com/online/penny-coffee-roasters-azusa-ave-new-650-north-azusa-avenue">
             Order Azusa
           </a>
         </div>
       </div>
 
-      <div class="hero-right">
-        <div class="photo-stack">
-          <img class="photo main-photo" src="coffee.jpg" alt="Penny coffee" />
-          <img class="photo small-photo" src="matcha.jpg" alt="Penny matcha" />
-        </div>
+      <div class="hero-photos">
+        <div class="steam steam-a"></div>
+        <div class="steam steam-b"></div>
+        <div class="steam steam-c"></div>
 
-        <div class="steam steam-1"></div>
-        <div class="steam steam-2"></div>
-        <div class="steam steam-3"></div>
+        <img class="photo photo-coffee tilt-card" src="coffee.jpg" alt="Penny coffee cup" />
+        <img class="photo photo-matcha tilt-card" src="matcha.jpg" alt="Penny matcha" />
       </div>
     </section>
 
-    <section id="drinks" class="section">
-      <p class="eyebrow">Pick your mood</p>
-      <h2>What are you craving?</h2>
+    <section id="drinks" class="section drinks-section">
+      <div class="section-top">
+        <p class="eyebrow">Pick your mood</p>
+        <h2>What are you craving?</h2>
+      </div>
 
       <div class="mood-grid">
-        <button data-result="Smooth choice: latte, cappuccino, or daily coffee.">Smooth</button>
-        <button data-result="Bright choice: matcha, iced coffee, or pour over.">Bright</button>
-        <button data-result="Bold choice: espresso, cold brew, or dark roast.">Bold</button>
+        <button class="mood-card magnetic" data-result="Smooth choice: latte, cappuccino, or daily coffee.">
+          <span>Smooth</span>
+          <small>creamy + classic</small>
+        </button>
+
+        <button class="mood-card magnetic" data-result="Bright choice: matcha, iced coffee, or pour over.">
+          <span>Bright</span>
+          <small>fresh + clean</small>
+        </button>
+
+        <button class="mood-card magnetic" data-result="Bold choice: espresso, cold brew, or dark roast.">
+          <span>Bold</span>
+          <small>strong + rich</small>
+        </button>
       </div>
 
-      <div id="result">Tap a mood for a Penny recommendation.</div>
+      <div id="resultBox">Tap a mood for a Penny recommendation.</div>
     </section>
 
-    <section id="locations" class="section location-section">
-      <img src="storefront.png" alt="Penny Coffee Roasters storefront" />
-      <img src="storefront2.jpg" alt="Penny Coffee Roasters storefront" />
-
-      <div>
+    <section id="locations" class="section locations-section">
+      <div class="section-top light">
         <p class="eyebrow">Visit Penny</p>
-        <h2>Two local stops. One Penny feeling.</h2>
+        <h2>Choose your local stop.</h2>
+      </div>
 
-        <div class="location-buttons">
-          <a target="_blank" href="https://order.toasttab.com/online/penny-coffee-roasters-glendora-new-905-east-arrow-highway">Glendora</a>
-          <a target="_blank" href="https://order.toasttab.com/online/penny-coffee-roasters-azusa-ave-new-650-north-azusa-avenue">Azusa</a>
-        </div>
+      <div class="location-grid">
+        <article class="location-card tilt-card">
+          <img src="storefront2.jpg" alt="Penny Coffee Roasters Glendora" />
+          <div>
+            <span>Glendora</span>
+            <h3>Order Ahead</h3>
+            <a class="magnetic" target="_blank" href="https://order.toasttab.com/online/penny-coffee-roasters-glendora-new-905-east-arrow-highway">Order Drinks</a>
+          </div>
+        </article>
+
+        <article class="location-card tilt-card">
+          <img src="storefront.png" alt="Penny Coffee Roasters Azusa" />
+          <div>
+            <span>Azusa</span>
+            <h3>Order Ahead</h3>
+            <a class="magnetic" target="_blank" href="https://order.toasttab.com/online/penny-coffee-roasters-azusa-ave-new-650-north-azusa-avenue">Order Drinks</a>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="beans-section" class="section beans-section">
-      <p class="eyebrow">Fresh beans</p>
-      <h2>Bring Penny home.</h2>
+    <section id="beans" class="section beans-section">
+      <div class="section-top">
+        <p class="eyebrow">Fresh beans</p>
+        <h2>Bring Penny home.</h2>
+      </div>
 
-      <div class="bean-cards">
-        <div>Ethiopia</div>
-        <div>Pink Bourbon</div>
-        <div>Colombia Gesha</div>
-        <div>Roaster’s Choice</div>
+      <div class="bean-grid">
+        <button class="bean-card magnetic">Ethiopia</button>
+        <button class="bean-card magnetic">Pink Bourbon</button>
+        <button class="bean-card magnetic">Colombia Gesha</button>
+        <button class="bean-card magnetic">Roaster’s Choice</button>
       </div>
     </section>
   </main>
