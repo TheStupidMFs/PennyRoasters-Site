@@ -3,171 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Penny Coffee Roasters</title>
-
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="noise"></div>
-  <canvas id="beanCanvas"></canvas>
+  <canvas id="beans"></canvas>
 
   <header class="nav">
-    <a href="#home" class="logo">
-      <img src="penny-logo.png" alt="Penny Coffee Roasters logo" />
-    </a>
+    <img class="logo" src="penny-logo.png" alt="Penny Coffee Roasters logo" />
 
     <nav>
       <a href="#drinks">Drinks</a>
       <a href="#locations">Locations</a>
-      <a href="#coffee">Coffee</a>
-      <a href="#story">Story</a>
+      <a href="#beans-section">Beans</a>
     </nav>
 
-    <a class="nav-btn" href="#order">Order Now</a>
+    <a class="order-btn" href="#order">Order</a>
   </header>
 
-  <main id="home">
+  <main>
     <section class="hero">
-      <div class="hero-bg">
-        <img src="storefront.png" alt="Penny Coffee Roasters storefront" />
-      </div>
-
-      <div class="steam steam-one"></div>
-      <div class="steam steam-two"></div>
-      <div class="steam steam-three"></div>
-
-      <div class="hero-content">
-        <p class="eyebrow">Specialty Coffee • Fresh Roasted • Local Favorite</p>
+      <div class="hero-left">
+        <p class="eyebrow">Fresh roasted • neighborhood coffee • daily ritual</p>
 
         <h1>Uniting Community One Coffee At A Time</h1>
 
-        <p class="hero-text">
-          Fresh drinks, quality beans, and a neighborhood space built for slow mornings,
-          good conversations, and daily rituals.
+        <p class="hero-copy">
+          Handcrafted drinks, fresh beans, and a warm local space built for conversations,
+          slow mornings, and your next favorite cup.
         </p>
 
-        <div class="hero-buttons" id="order">
-          <a
-            class="btn primary"
-            target="_blank"
-            href="https://order.toasttab.com/online/penny-coffee-roasters-glendora-new-905-east-arrow-highway"
-          >
+        <div id="order" class="hero-buttons">
+          <a target="_blank" href="https://order.toasttab.com/online/penny-coffee-roasters-glendora-new-905-east-arrow-highway">
             Order Glendora
           </a>
 
-          <a
-            class="btn secondary"
-            target="_blank"
-            href="https://order.toasttab.com/online/penny-coffee-roasters-azusa-ave-new-650-north-azusa-avenue"
-          >
+          <a target="_blank" href="https://order.toasttab.com/online/penny-coffee-roasters-azusa-ave-new-650-north-azusa-avenue">
             Order Azusa
-          </a>
-
-          <a class="btn glass" href="#coffee">
-            Buy Coffee
           </a>
         </div>
       </div>
 
-      <div class="scroll-hint">
-        <span></span>
-        Explore Penny
+      <div class="hero-right">
+        <div class="photo-stack">
+          <img class="photo main-photo" src="coffee.jpg" alt="Penny coffee" />
+          <img class="photo small-photo" src="matcha.jpg" alt="Penny matcha" />
+        </div>
+
+        <div class="steam steam-1"></div>
+        <div class="steam steam-2"></div>
+        <div class="steam steam-3"></div>
       </div>
     </section>
 
-    <section id="drinks" class="section drinks">
-      <div class="section-heading">
-        <p class="eyebrow">Signature Drinks</p>
-        <h2>Pick your mood.</h2>
+    <section id="drinks" class="section">
+      <p class="eyebrow">Pick your mood</p>
+      <h2>What are you craving?</h2>
+
+      <div class="mood-grid">
+        <button data-result="Smooth choice: latte, cappuccino, or daily coffee.">Smooth</button>
+        <button data-result="Bright choice: matcha, iced coffee, or pour over.">Bright</button>
+        <button data-result="Bold choice: espresso, cold brew, or dark roast.">Bold</button>
       </div>
 
-      <div class="drink-grid">
-        <article class="drink-card big">
-          <img src="coffee.jpg" alt="Penny coffee cup" />
-          <div>
-            <span>01</span>
-            <h3>Daily Coffee</h3>
-            <p>Warm, smooth, and ready for the morning rush.</p>
-          </div>
-        </article>
-
-        <article class="drink-card">
-          <img src="matcha.jpg" alt="Penny matcha drink" />
-          <div>
-            <span>02</span>
-            <h3>Matcha</h3>
-            <p>Earthy, bright, creamy, and clean.</p>
-          </div>
-        </article>
-
-        <article class="interactive-card">
-          <p class="eyebrow">Coffee Finder</p>
-          <h3>What are you craving?</h3>
-
-          <button data-result="Smooth & classic → Try a latte or cappuccino.">Smooth</button>
-          <button data-result="Bright & fresh → Try matcha or a pour over.">Bright</button>
-          <button data-result="Bold & strong → Try espresso or cold brew.">Bold</button>
-
-          <div id="resultBox">Tap a flavor mood.</div>
-        </article>
-      </div>
+      <div id="result">Tap a mood for a Penny recommendation.</div>
     </section>
 
-    <section id="locations" class="section locations">
-      <div class="location-image">
-        <img src="storefront.png" alt="Penny storefront" />
-      </div>
+    <section id="locations" class="section location-section">
+      <img src="storefront.png" alt="Penny Coffee Roasters storefront" />
 
-      <div class="location-copy">
-        <p class="eyebrow">Pull Up</p>
+      <div>
+        <p class="eyebrow">Visit Penny</p>
         <h2>Two local stops. One Penny feeling.</h2>
 
         <div class="location-buttons">
-          <a
-            target="_blank"
-            href="https://order.toasttab.com/online/penny-coffee-roasters-glendora-new-905-east-arrow-highway"
-          >
-            Glendora
-          </a>
-
-          <a
-            target="_blank"
-            href="https://order.toasttab.com/online/penny-coffee-roasters-azusa-ave-new-650-north-azusa-avenue"
-          >
-            Azusa
-          </a>
+          <a target="_blank" href="https://order.toasttab.com/online/penny-coffee-roasters-glendora-new-905-east-arrow-highway">Glendora</a>
+          <a target="_blank" href="https://order.toasttab.com/online/penny-coffee-roasters-azusa-ave-new-650-north-azusa-avenue">Azusa</a>
         </div>
       </div>
     </section>
 
-    <section id="coffee" class="section shop-preview">
-      <p class="eyebrow">Fresh Beans</p>
-      <h2>Coffee for home, work, and the people you actually like.</h2>
+    <section id="beans-section" class="section beans-section">
+      <p class="eyebrow">Fresh beans</p>
+      <h2>Bring Penny home.</h2>
 
-      <div class="bean-row">
+      <div class="bean-cards">
         <div>Ethiopia</div>
         <div>Pink Bourbon</div>
         <div>Colombia Gesha</div>
         <div>Roaster’s Choice</div>
       </div>
     </section>
-
-    <section id="story" class="section story">
-      <p class="eyebrow">The Penny Story</p>
-      <h2>More than a coffee stop.</h2>
-      <p>
-        Penny is where people meet, work, reset, and build small rituals around good coffee.
-        This site turns that feeling into a digital experience.
-      </p>
-    </section>
   </main>
-
-  <footer>
-    <img src="penny-logo.png" alt="Penny Coffee Roasters logo" />
-    <p>Website concept for Penny Coffee Roasters.</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
