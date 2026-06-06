@@ -90,3 +90,12 @@ window.addEventListener("resize", resizeCanvas);
 
 resizeCanvas();
 animateBeans();
+.pop {
+  animation: popResult 0.35s ease;
+}
+
+@keyframes popResult {
+  50% {
+    transform: scale(1.04);
+  }
+}
