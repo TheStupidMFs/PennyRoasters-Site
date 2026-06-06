@@ -32,7 +32,13 @@ body {
 }
 
 .logo {
-  height: 28px;
+  height: 72px;
+  width: auto;
+  transition: .3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 .nav nav {
