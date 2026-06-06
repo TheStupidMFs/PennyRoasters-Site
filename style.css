@@ -285,3 +285,12 @@ h2 {
     height: 440px;
   }
 }
+.pop {
+  animation: pop 0.35s ease;
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.04);
+  }
+}
